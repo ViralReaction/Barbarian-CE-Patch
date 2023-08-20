@@ -290,6 +290,7 @@
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedSword"]/statBases</xpath>
 						<value>
 							<Bulk>6</Bulk>
+							<MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
 						</value>
 					</li>
 					
@@ -299,6 +300,17 @@
 							<Mass>1.25</Mass>
 						</value>
 					</li>
+					
+					<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedSword"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MeleeCritChance>0.15</MeleeCritChance>
+							<MeleeParryChance>0.30</MeleeParryChance>
+							<MeleeDodgeChance>0.30</MeleeDodgeChance>
+						</equippedStatOffsets>
+					</value>
+				</li>
 
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedSword"]/weaponTags</xpath>
@@ -323,26 +335,14 @@
 									<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 								</li>
 								<li Class="CombatExtended.ToolCE">
-									<label>point</label>
-									<capacities>
-										<li>Stab</li>
-									</capacities>
-									<power>20</power>
-									<cooldownTime>1.46</cooldownTime>
-									<chanceFactor>0.50</chanceFactor>
-									<armorPenetrationBlunt>0.55</armorPenetrationBlunt>
-									<armorPenetrationSharp>1.40</armorPenetrationSharp>
-									<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-								</li>
-								<li Class="CombatExtended.ToolCE">
 									<label>edge</label>
 									<capacities>
 										<li>Cut</li>
 									</capacities>
-									<power>22</power>
-									<cooldownTime>1.59</cooldownTime>
-									<chanceFactor>0.45</chanceFactor>
-									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+									<power>25</power>
+									<cooldownTime>1.36</cooldownTime>
+									<chanceFactor>0.95</chanceFactor>
+									<armorPenetrationBlunt>0.95</armorPenetrationBlunt>
 									<armorPenetrationSharp>0.58</armorPenetrationSharp>
 									<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 								</li>
@@ -355,6 +355,7 @@
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedClaymore"]/statBases</xpath>
 						<value>
 							<Bulk>12</Bulk>
+							<MeleeCounterParryBonus>0.70</MeleeCounterParryBonus>
 						</value>
 					</li>
 					
@@ -362,6 +363,17 @@
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedClaymore"]/statBases/Mass</xpath>
 						<value>
 							<Mass>3</Mass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedClaymore"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								<MeleeCritChance>0.30</MeleeCritChance>
+								<MeleeParryChance>1.20</MeleeParryChance>
+								<MeleeDodgeChance>0.50</MeleeDodgeChance>
+							</equippedStatOffsets>
 						</value>
 					</li>
 
@@ -443,6 +455,7 @@
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedAxe"]/statBases</xpath>
 						<value>
 							<Bulk>9.5</Bulk>
+							<MeleeCounterParryBonus>0.20</MeleeCounterParryBonus>
 						</value>
 					</li>
 					
@@ -453,12 +466,24 @@
 						</value>
 					</li>
 					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedAxe"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								<MeleeCritChance>0.04</MeleeCritChance>
+								<MeleeParryChance>0.15</MeleeParryChance>
+								<MeleeDodgeChance>0.30</MeleeDodgeChance>
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
 					<!--Two-Handed Axe: Woodcutter's Axe-->
 
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedBattleAxe"]/statBases</xpath>
 						<value>
-							<Bulk>4</Bulk>
+							<Bulk>7</Bulk>
+							<MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
 						</value>
 					</li>
 					
@@ -466,6 +491,17 @@
 						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedBattleAxe"]/statBases/Mass</xpath>
 						<value>
 							<Mass>3</Mass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_RustedBattleAxe"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								<MeleeCritChance>0.30</MeleeCritChance>
+								<MeleeParryChance>0.40</MeleeParryChance>
+								<MeleeDodgeChance>0.23</MeleeDodgeChance>
+							</equippedStatOffsets>
 						</value>
 					</li>
 
@@ -490,7 +526,7 @@
 										<li>Blunt</li>
 									</capacities>
 									<power>15</power>
-									<cooldownTime>1.95</cooldownTime>
+									<cooldownTime>2.18</cooldownTime>
 									<chanceFactor>0.25</chanceFactor>
 									<armorPenetrationBlunt>9.6</armorPenetrationBlunt>
 									<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
@@ -500,11 +536,11 @@
 									<capacities>
 										<li>Cut</li>
 									</capacities>
-									<power>29</power>
-									<cooldownTime>2.48</cooldownTime>
+									<power>37</power>
+									<cooldownTime>2.18</cooldownTime>
 									<chanceFactor>0.70</chanceFactor>
 									<armorPenetrationBlunt>9.6</armorPenetrationBlunt>
-									<armorPenetrationSharp>0.90</armorPenetrationSharp>
+									<armorPenetrationSharp>0.95</armorPenetrationSharp>
 									<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 								</li>
 							</tools>
