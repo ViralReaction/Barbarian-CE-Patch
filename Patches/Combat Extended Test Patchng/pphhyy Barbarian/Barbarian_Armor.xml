@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Barbarians MO Submod</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<!-- Barbarian Leather Coat -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoat"]/statBases</xpath>
+						<value>
+							<Bulk>18</Bulk>
+							<WornBulk>4</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoat"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoat"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoat"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					<!-- Barbarian Leather Coat Level 2 -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoatII"]/statBases</xpath>
+						<value>
+							<Bulk>18</Bulk>
+							<WornBulk>4</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoatII"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.26</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoatII"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>0.84</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BarbLeatherCoatII"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					<!-- Barbarian Mail -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/statBases</xpath>
+						<value>
+							<Bulk>30</Bulk>
+							<WornBulk>12</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/statBases/Mass</xpath>
+						<value>
+							<Mass>9</Mass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/equippedStatOffsets</xpath>
+						<value>
+							<MeleeDodgeChance>-0.10</MeleeDodgeChance>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.87</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>2.86</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_Mail" or defName="pphhyy_Barbarian_Scale"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					<!-- Barbarian Mail Level 2 -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/statBases</xpath>
+						<value>
+							<Bulk>30</Bulk>
+							<WornBulk>12</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/statBases/Mass</xpath>
+						<value>
+							<Mass>9</Mass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/equippedStatOffsets</xpath>
+						<value>
+							<MeleeDodgeChance>-0.10</MeleeDodgeChance>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>2.2</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>3.3</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_MailII" or defName="pphhyy_Barbarian_ScaleII"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					
+					<!-- Bone Armor -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmor"]/statBases</xpath>
+						<value>
+							<Bulk>18</Bulk>
+							<WornBulk>4</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmor"]/statBases/Mass</xpath>
+						<value>
+							<Mass>6</Mass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmor"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmor"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<!-- Bone Armor Level 2 -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorII"]/statBases</xpath>
+						<value>
+							<Bulk>18</Bulk>
+							<WornBulk>4</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorII"]/statBases/Mass</xpath>
+						<value>
+							<Mass>6</Mass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorII"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.26</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorII"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>0.84</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<!-- Bone Armor Level 3 -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorIII"]/statBases</xpath>
+						<value>
+							<Bulk>18</Bulk>
+							<WornBulk>4</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorIII"]/statBases/Mass</xpath>
+						<value>
+							<Mass>6</Mass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorIII"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>1.38</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_BoneArmorIII"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>0.92</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<!-- Barbarian Chosen Mail -->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMail" or defName="pphhyy_Barbarian_ChosenScale" or defName="pphhyy_Barbarian_WarlordArmor"]/statBases</xpath>
+						<value>
+							<Bulk>100</Bulk>
+							<WornBulk>10</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMail" or defName="pphhyy_Barbarian_ChosenScale" or defName="pphhyy_Barbarian_WarlordArmor"]/equippedStatOffsets</xpath>
+						<value>
+							<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMail" or defName="pphhyy_Barbarian_ChosenScale" or defName="pphhyy_Barbarian_WarlordArmor"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>2.55</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMail" or defName="pphhyy_Barbarian_ChosenScale" or defName="pphhyy_Barbarian_WarlordArmor"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>3.9</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMail" or defName="pphhyy_Barbarian_ChosenScale" or defName="pphhyy_Barbarian_WarlordArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					<!-- Barbarian Chosen Mail Level 2-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMailII" or defName="pphhyy_Barbarian_ChosenScaleII" or defName="pphhyy_Barbarian_WarlordArmorII"]/statBases</xpath>
+						<value>
+							<Bulk>100</Bulk>
+							<WornBulk>10</WornBulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMailII" or defName="pphhyy_Barbarian_ChosenScaleII" or defName="pphhyy_Barbarian_WarlordArmorII"]/equippedStatOffsets</xpath>
+						<value>
+							<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMailII" or defName="pphhyy_Barbarian_ChosenScaleII" or defName="pphhyy_Barbarian_WarlordArmorII"]/statBases/ArmorRating_Sharp</xpath>
+						<value>
+							<ArmorRating_Sharp>2.67</ArmorRating_Sharp>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMailII" or defName="pphhyy_Barbarian_ChosenScaleII" or defName="pphhyy_Barbarian_WarlordArmorII"]/statBases/ArmorRating_Blunt</xpath>
+						<value>
+							<ArmorRating_Blunt>4.09</ArmorRating_Blunt>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="pphhyy_Barbarian_ChosenMailII" or defName="pphhyy_Barbarian_ChosenScaleII" or defName="pphhyy_Barbarian_WarlordArmorII"]/equippedStatOffsets/MoveSpeed</xpath>
+					</li>
+
+					<!-- Chosen Armor Partial Armor -->
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_ChosenMail" or
+						defName="pphhyy_Barbarian_ChosenMailII" or
+						defName="pphhyy_Barbarian_ChosenScale" or
+						defName="pphhyy_Barbarian_ChosenScaleII" or
+						defName="pphhyy_Barbarian_WarlordArmor" or
+						defName="pphhyy_Barbarian_WarlordArmorII"]
+						</xpath>
+						<value>
+							<li Class="CombatExtended.PartialArmorExt">
+								<stats>
+									<li>
+										<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+										<parts>
+											<li>Neck</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+										<parts>
+											<li>Neck</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+										<parts>
+											<li>Leg</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+										<parts>
+											<li>Leg</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+										<parts>
+											<li>Arm</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+										<parts>
+											<li>Arm</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+										<parts>
+											<li>Hand</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+										<parts>
+											<li>Hand</li>
+										</parts>
+									</li>
+								</stats>
+							</li>
+						</value>
+					</li>
+
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>
