@@ -68,7 +68,12 @@
 											<li>Shoulders</li>
 											<li>Torso</li>
 											<li>Neck</li>
+											<li>FullHead</li>
 										</shieldCoverage>
+										<crouchCoverage>
+												<li>Legs</li>
+										</crouchCoverage>
+										<drawAsTall>true</drawAsTall>
 									</li>
 								</modExtensions>
 								<tradeTags>
@@ -123,7 +128,12 @@
 											<li>Shoulders</li>
 											<li>Torso</li>
 											<li>Neck</li>
+											<li>FullHead</li>
 										</shieldCoverage>
+										<crouchCoverage>
+												<li>Legs</li>
+										</crouchCoverage>
+										<drawAsTall>true</drawAsTall>
 									</li>
 								</modExtensions>
 								<tradeTags>
@@ -178,7 +188,12 @@
 											<li>Shoulders</li>
 											<li>Torso</li>
 											<li>Neck</li>
+											<li>FullHead</li>
 										</shieldCoverage>
+										<crouchCoverage>
+												<li>Legs</li>
+										</crouchCoverage>
+										<drawAsTall>true</drawAsTall>
 									</li>
 								</modExtensions>
 								<tradeTags>
