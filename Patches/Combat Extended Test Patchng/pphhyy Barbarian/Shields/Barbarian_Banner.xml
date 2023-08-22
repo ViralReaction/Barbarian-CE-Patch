@@ -71,24 +71,16 @@
 						</value>
 					</li>
 
-					<li Class="PatchOperationRemove">
+					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
 						defName="pphhyy_Barbarian_BarbBannerIV"]/equippedStatOffsets/MoveSpeed
 						</xpath>
-					</li>
-
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[
-						defName="pphhyy_Barbarian_BarbBannerI" or
-						defName="pphhyy_Barbarian_BarbBannerII" or
-						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/equippedStatOffsets</xpath>
 						<value>
-							<Suppressability>-0.55</Suppressability>
-							<PainShockThreshold>0.35</PainShockThreshold>
+						<Suppressability>-0.55</Suppressability>
+						<PainShockThreshold>0.35</PainShockThreshold>
 						</value>
 					</li>
 
