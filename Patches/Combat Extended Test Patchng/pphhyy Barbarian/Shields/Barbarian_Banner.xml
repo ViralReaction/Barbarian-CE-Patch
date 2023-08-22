@@ -55,7 +55,7 @@
 						defName="pphhyy_Barbarian_BarbBannerIV"]/graphicData
 						</xpath>
 						<value>
-							<Bulk>10</Bulk>
+							 <drawSize>(2.5, 2.5)</drawSize>
 						</value>
 					</li>
 
