@@ -11,13 +11,14 @@
 			</mods>
 			<match Class="PatchOperationSequence">
 				<operations>
-				
+
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/tools</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/tools
+						</xpath>
 						<value>
 							<tools>
 								<li Class="CombatExtended.ToolCE">
@@ -45,57 +46,115 @@
 							</tools>
 						</value>
 					</li>
-					
+
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/statBases</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/graphicData
+						</xpath>
 						<value>
-							<Bulk>6</Bulk>
+							<Bulk>10</Bulk>
 						</value>
 					</li>
-					
+
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/weaponTags</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/statBases
+						</xpath>
+						<value>
+							<Bulk>10</Bulk>
+						</value>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_BarbBannerI" or
+						defName="pphhyy_Barbarian_BarbBannerII" or
+						defName="pphhyy_Barbarian_BarbBannerIII" or
+						defName="pphhyy_Barbarian_BarbBannerIV"]/equippedStatOffsets/MoveSpeed
+						</xpath>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_BarbBannerI" or
+						defName="pphhyy_Barbarian_BarbBannerII" or
+						defName="pphhyy_Barbarian_BarbBannerIII" or
+						defName="pphhyy_Barbarian_BarbBannerIV"]/equippedStatOffsets</xpath>
+						<value>
+							<Suppressability>-0.55</Suppressability>
+							<PainShockThreshold>0.35</PainShockThreshold>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_BarbBannerI" or
+						defName="pphhyy_Barbarian_BarbBannerII" or
+						defName="pphhyy_Barbarian_BarbBannerIII" or
+						defName="pphhyy_Barbarian_BarbBannerIV"]/weaponTags						</xpath>
 						<value>
 							<li>CE_OneHandedWeapon</li>
 						</value>
 					</li>
-					
+
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/northOffset</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/canBlockRanged
+						</xpath>
+						<value>
+						<canBlockRanged>false</canBlockRanged>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_BarbBannerI" or
+						defName="pphhyy_Barbarian_BarbBannerII" or
+						defName="pphhyy_Barbarian_BarbBannerIII" or
+						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/canBlockMelee
+						</xpath>
+						<value>
+						<canBlockMelee>false</canBlockMelee>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[
+						defName="pphhyy_Barbarian_BarbBannerI" or
+						defName="pphhyy_Barbarian_BarbBannerII" or
+						defName="pphhyy_Barbarian_BarbBannerIII" or
+						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/northOffset						</xpath>
 						<value>
 							<northOffset>(-0.40, -0.033, 0.6)</northOffset>
 						</value>
 					</li>
-					
+
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/westOffset</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/westOffset						</xpath>
 						<value>
-							 <westOffset>(-0.20, -0.053, 0.6)</westOffset>
+							<westOffset>(-0.20, -0.053, 0.6)</westOffset>
 						</value>
 					</li>
-					
+
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[
 						defName="pphhyy_Barbarian_BarbBannerI" or
 						defName="pphhyy_Barbarian_BarbBannerII" or
 						defName="pphhyy_Barbarian_BarbBannerIII" or
-						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/eastOffset</xpath>
+						defName="pphhyy_Barbarian_BarbBannerIV"]/comps/li[@Class="PawnShields.CompProperties_Shield"]/renderProperties/eastOffset						</xpath>
 						<value>
 							<eastOffset>(0.20, -0.017, 0.6)</eastOffset>
 						</value>
